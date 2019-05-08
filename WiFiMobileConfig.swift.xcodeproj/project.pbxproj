@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"WiFiMobileConfig.swift::WiFiMobileConfig.swiftPackageTests::ProductTarget" /* WiFiMobileConfig.swiftPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_86 /* Build configuration list for PBXAggregateTarget "WiFiMobileConfig.swiftPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_89 /* PBXTargetDependency */,
+			);
+			name = WiFiMobileConfig.swiftPackageTests;
+			productName = WiFiMobileConfig.swiftPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		F1993E7222837A4E00FDF95B /* WiFiMobileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* WiFiMobileConfig.swift */; };
+		F1993E7322837A7800FDF95B /* MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MIMEType.swift */; };
+		F1993E7422837A7800FDF95B /* MobileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MobileConfig.swift */; };
+		F1993E7522837A7800FDF95B /* Password+validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Password+validate.swift */; };
+		F1993E7622837A7800FDF95B /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Password.swift */; };
+		F1993E7722837A7800FDF95B /* PlistDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* PlistDocument.swift */; };
+		F1993E7822837A7800FDF95B /* PlistSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* PlistSerializable.swift */; };
+		F1993E7922837A7800FDF95B /* SSID+validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SSID+validate.swift */; };
+		F1993E7A22837A7800FDF95B /* SSID.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* SSID.swift */; };
+		F1993E7B22837A7800FDF95B /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* ValidationResult.swift */; };
+		OBJ_100 /* Diffable+RoughEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Diffable+RoughEquatable.swift */; };
+		OBJ_101 /* Diffable.EnumEntry+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Diffable.EnumEntry+CustomStringConvertible.swift */; };
+		OBJ_102 /* Diffable.EnumEntry+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Diffable.EnumEntry+Equatable.swift */; };
+		OBJ_103 /* Diffable.EnumEntry+PrettyPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Diffable.EnumEntry+PrettyPrintable.swift */; };
+		OBJ_104 /* Diffable.diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Diffable.diff.swift */; };
+		OBJ_105 /* Diffable.from.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Diffable.from.swift */; };
+		OBJ_106 /* Diffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Diffable.swift */; };
+		OBJ_107 /* DiffableConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* DiffableConvertible.swift */; };
+		OBJ_108 /* DiffableDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* DiffableDictionary.swift */; };
+		OBJ_109 /* DiffableSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* DiffableSequence.swift */; };
+		OBJ_110 /* DiffableSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* DiffableSet.swift */; };
+		OBJ_111 /* DifferentiaUnit+PrettyPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* DifferentiaUnit+PrettyPrintable.swift */; };
+		OBJ_112 /* DifferentiaUnit.DictionaryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* DifferentiaUnit.DictionaryType.swift */; };
+		OBJ_113 /* DifferentiaUnit.SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* DifferentiaUnit.SequenceType.swift */; };
+		OBJ_114 /* DifferentiaUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* DifferentiaUnit.swift */; };
+		OBJ_115 /* Dwifft.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Dwifft.swift */; };
+		OBJ_116 /* EnumCaseName.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* EnumCaseName.swift */; };
+		OBJ_117 /* MirrorDiffKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* MirrorDiffKit.swift */; };
+		OBJ_118 /* PrettyLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* PrettyLine.swift */; };
+		OBJ_119 /* PrettyPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* PrettyPrintable.swift */; };
+		OBJ_120 /* PrettyPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* PrettyPrinter.swift */; };
+		OBJ_121 /* RoughEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* RoughEquatable.swift */; };
+		OBJ_122 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Transformer.swift */; };
+		OBJ_123 /* TupleRepresentationDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* TupleRepresentationDetector.swift */; };
+		OBJ_124 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Util.swift */; };
+		OBJ_125 /* MobileConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* MobileConfigTests.swift */; };
+		OBJ_126 /* PlistDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* PlistDocumentTests.swift */; };
+		OBJ_128 /* WiFiMobileConfig_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "WiFiMobileConfig.swift::WiFiMobileConfig.swift::Product" /* WiFiMobileConfig_swift.framework */; };
+		OBJ_67 /* MobileConfig.Installer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* MobileConfig.Installer.swift */; };
+		OBJ_68 /* MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MIMEType.swift */; };
+		OBJ_69 /* MobileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MobileConfig.swift */; };
+		OBJ_70 /* Password+validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Password+validate.swift */; };
+		OBJ_71 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Password.swift */; };
+		OBJ_72 /* PlistDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* PlistDocument.swift */; };
+		OBJ_73 /* PlistSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* PlistSerializable.swift */; };
+		OBJ_74 /* SSID+validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SSID+validate.swift */; };
+		OBJ_75 /* SSID.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* SSID.swift */; };
+		OBJ_76 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* ValidationResult.swift */; };
+		OBJ_77 /* WiFiMobileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* WiFiMobileConfig.swift */; };
+		OBJ_84 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_95 /* ComparableDifferentiaUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* ComparableDifferentiaUnits.swift */; };
+		OBJ_96 /* Diffable+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Diffable+CustomStringConvertible.swift */; };
+		OBJ_97 /* Diffable+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Diffable+Equatable.swift */; };
+		OBJ_98 /* Diffable+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Diffable+Hashable.swift */; };
+		OBJ_99 /* Diffable+PrettyPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Diffable+PrettyPrintable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1993E70228377AD00FDF95B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "WiFiMobileConfig.swift::WiFiMobileConfig.swift";
+			remoteInfo = WiFiMobileConfig.swift;
+		};
+		F1993E71228377AE00FDF95B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "WiFiMobileConfig.swift::WiFiMobileConfig.swiftTests";
+			remoteInfo = WiFiMobileConfig.swiftTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_11 /* MobileConfig.Installer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileConfig.Installer.swift; sourceTree = "<group>"; };
+		OBJ_12 /* MIMEType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIMEType.swift; sourceTree = "<group>"; };
+		OBJ_13 /* MobileConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileConfig.swift; sourceTree = "<group>"; };
+		OBJ_14 /* Password+validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Password+validate.swift"; sourceTree = "<group>"; };
+		OBJ_15 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		OBJ_16 /* PlistDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistDocument.swift; sourceTree = "<group>"; };
+		OBJ_17 /* PlistSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistSerializable.swift; sourceTree = "<group>"; };
+		OBJ_18 /* SSID+validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SSID+validate.swift"; sourceTree = "<group>"; };
+		OBJ_19 /* SSID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSID.swift; sourceTree = "<group>"; };
+		OBJ_20 /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
+		OBJ_21 /* WiFiMobileConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiMobileConfig.swift; sourceTree = "<group>"; };
+		OBJ_24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_26 /* ComparableDifferentiaUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableDifferentiaUnits.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Diffable+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diffable+CustomStringConvertible.swift"; sourceTree = "<group>"; };
+		OBJ_28 /* Diffable+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diffable+Equatable.swift"; sourceTree = "<group>"; };
+		OBJ_29 /* Diffable+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diffable+Hashable.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* Diffable+PrettyPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diffable+PrettyPrintable.swift"; sourceTree = "<group>"; };
+		OBJ_31 /* Diffable+RoughEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diffable+RoughEquatable.swift"; sourceTree = "<group>"; };
+		OBJ_32 /* Diffable.EnumEntry+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diffable.EnumEntry+CustomStringConvertible.swift"; sourceTree = "<group>"; };
+		OBJ_33 /* Diffable.EnumEntry+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diffable.EnumEntry+Equatable.swift"; sourceTree = "<group>"; };
+		OBJ_34 /* Diffable.EnumEntry+PrettyPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diffable.EnumEntry+PrettyPrintable.swift"; sourceTree = "<group>"; };
+		OBJ_35 /* Diffable.diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diffable.diff.swift; sourceTree = "<group>"; };
+		OBJ_36 /* Diffable.from.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diffable.from.swift; sourceTree = "<group>"; };
+		OBJ_37 /* Diffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diffable.swift; sourceTree = "<group>"; };
+		OBJ_38 /* DiffableConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableConvertible.swift; sourceTree = "<group>"; };
+		OBJ_39 /* DiffableDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDictionary.swift; sourceTree = "<group>"; };
+		OBJ_40 /* DiffableSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableSequence.swift; sourceTree = "<group>"; };
+		OBJ_41 /* DiffableSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableSet.swift; sourceTree = "<group>"; };
+		OBJ_42 /* DifferentiaUnit+PrettyPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DifferentiaUnit+PrettyPrintable.swift"; sourceTree = "<group>"; };
+		OBJ_43 /* DifferentiaUnit.DictionaryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentiaUnit.DictionaryType.swift; sourceTree = "<group>"; };
+		OBJ_44 /* DifferentiaUnit.SequenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentiaUnit.SequenceType.swift; sourceTree = "<group>"; };
+		OBJ_45 /* DifferentiaUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentiaUnit.swift; sourceTree = "<group>"; };
+		OBJ_46 /* Dwifft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dwifft.swift; sourceTree = "<group>"; };
+		OBJ_47 /* EnumCaseName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCaseName.swift; sourceTree = "<group>"; };
+		OBJ_48 /* MirrorDiffKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorDiffKit.swift; sourceTree = "<group>"; };
+		OBJ_49 /* PrettyLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyLine.swift; sourceTree = "<group>"; };
+		OBJ_50 /* PrettyPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyPrintable.swift; sourceTree = "<group>"; };
+		OBJ_51 /* PrettyPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyPrinter.swift; sourceTree = "<group>"; };
+		OBJ_52 /* RoughEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoughEquatable.swift; sourceTree = "<group>"; };
+		OBJ_53 /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
+		OBJ_54 /* TupleRepresentationDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TupleRepresentationDetector.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		OBJ_56 /* MobileConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileConfigTests.swift; sourceTree = "<group>"; };
+		OBJ_57 /* PlistDocumentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistDocumentTests.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_61 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		"WiFiMobileConfig.swift::WiFiMobileConfig.swift::Product" /* WiFiMobileConfig_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WiFiMobileConfig_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"WiFiMobileConfig.swift::WiFiMobileConfig.swiftTests::Product" /* WiFiMobileConfig_swiftTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = WiFiMobileConfig_swiftTests.xctest; path = WiFiMobileConfig.swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_128 /* WiFiMobileConfig_swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_10 /* Installer */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* MobileConfig.Installer.swift */,
+			);
+			path = Installer;
+			sourceTree = "<group>";
+		};
+		OBJ_22 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* WiFiMobileConfig.swiftTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_23 /* WiFiMobileConfig.swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* Info.plist */,
+				OBJ_25 /* MirrorDiffKit */,
+				OBJ_56 /* MobileConfigTests.swift */,
+				OBJ_57 /* PlistDocumentTests.swift */,
+			);
+			name = WiFiMobileConfig.swiftTests;
+			path = Tests/WiFiMobileConfig.swiftTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_25 /* MirrorDiffKit */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_26 /* ComparableDifferentiaUnits.swift */,
+				OBJ_27 /* Diffable+CustomStringConvertible.swift */,
+				OBJ_28 /* Diffable+Equatable.swift */,
+				OBJ_29 /* Diffable+Hashable.swift */,
+				OBJ_30 /* Diffable+PrettyPrintable.swift */,
+				OBJ_31 /* Diffable+RoughEquatable.swift */,
+				OBJ_32 /* Diffable.EnumEntry+CustomStringConvertible.swift */,
+				OBJ_33 /* Diffable.EnumEntry+Equatable.swift */,
+				OBJ_34 /* Diffable.EnumEntry+PrettyPrintable.swift */,
+				OBJ_35 /* Diffable.diff.swift */,
+				OBJ_36 /* Diffable.from.swift */,
+				OBJ_37 /* Diffable.swift */,
+				OBJ_38 /* DiffableConvertible.swift */,
+				OBJ_39 /* DiffableDictionary.swift */,
+				OBJ_40 /* DiffableSequence.swift */,
+				OBJ_41 /* DiffableSet.swift */,
+				OBJ_42 /* DifferentiaUnit+PrettyPrintable.swift */,
+				OBJ_43 /* DifferentiaUnit.DictionaryType.swift */,
+				OBJ_44 /* DifferentiaUnit.SequenceType.swift */,
+				OBJ_45 /* DifferentiaUnit.swift */,
+				OBJ_46 /* Dwifft.swift */,
+				OBJ_47 /* EnumCaseName.swift */,
+				OBJ_48 /* MirrorDiffKit.swift */,
+				OBJ_49 /* PrettyLine.swift */,
+				OBJ_50 /* PrettyPrintable.swift */,
+				OBJ_51 /* PrettyPrinter.swift */,
+				OBJ_52 /* RoughEquatable.swift */,
+				OBJ_53 /* Transformer.swift */,
+				OBJ_54 /* TupleRepresentationDetector.swift */,
+				OBJ_55 /* Util.swift */,
+			);
+			path = MirrorDiffKit;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_22 /* Tests */,
+				OBJ_58 /* Products */,
+				OBJ_61 /* README.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"WiFiMobileConfig.swift::WiFiMobileConfig.swiftTests::Product" /* WiFiMobileConfig_swiftTests.xctest */,
+				"WiFiMobileConfig.swift::WiFiMobileConfig.swift::Product" /* WiFiMobileConfig_swift.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* WiFiMobileConfig.swift */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* WiFiMobileConfig.swift */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Info.plist */,
+				OBJ_10 /* Installer */,
+				OBJ_12 /* MIMEType.swift */,
+				OBJ_13 /* MobileConfig.swift */,
+				OBJ_14 /* Password+validate.swift */,
+				OBJ_15 /* Password.swift */,
+				OBJ_16 /* PlistDocument.swift */,
+				OBJ_17 /* PlistSerializable.swift */,
+				OBJ_18 /* SSID+validate.swift */,
+				OBJ_19 /* SSID.swift */,
+				OBJ_20 /* ValidationResult.swift */,
+				OBJ_21 /* WiFiMobileConfig.swift */,
+			);
+			name = WiFiMobileConfig.swift;
+			path = Sources/WiFiMobileConfig.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"WiFiMobileConfig.swift::SwiftPMPackageDescription" /* WiFiMobileConfig.swiftPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_80 /* Build configuration list for PBXNativeTarget "WiFiMobileConfig.swiftPackageDescription" */;
+			buildPhases = (
+				OBJ_83 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiFiMobileConfig.swiftPackageDescription;
+			productName = WiFiMobileConfig.swiftPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"WiFiMobileConfig.swift::WiFiMobileConfig.swift" /* WiFiMobileConfig.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_63 /* Build configuration list for PBXNativeTarget "WiFiMobileConfig.swift" */;
+			buildPhases = (
+				OBJ_66 /* Sources */,
+				OBJ_78 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiFiMobileConfig.swift;
+			productName = WiFiMobileConfig_swift;
+			productReference = "WiFiMobileConfig.swift::WiFiMobileConfig.swift::Product" /* WiFiMobileConfig_swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"WiFiMobileConfig.swift::WiFiMobileConfig.swiftTests" /* WiFiMobileConfig.swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_91 /* Build configuration list for PBXNativeTarget "WiFiMobileConfig.swiftTests" */;
+			buildPhases = (
+				OBJ_94 /* Sources */,
+				OBJ_127 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_129 /* PBXTargetDependency */,
+			);
+			name = WiFiMobileConfig.swiftTests;
+			productName = WiFiMobileConfig_swiftTests;
+			productReference = "WiFiMobileConfig.swift::WiFiMobileConfig.swiftTests::Product" /* WiFiMobileConfig_swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "WiFiMobileConfig.swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"WiFiMobileConfig.swift::WiFiMobileConfig.swift" /* WiFiMobileConfig.swift */,
+				"WiFiMobileConfig.swift::SwiftPMPackageDescription" /* WiFiMobileConfig.swiftPackageDescription */,
+				"WiFiMobileConfig.swift::WiFiMobileConfig.swiftPackageTests::ProductTarget" /* WiFiMobileConfig.swiftPackageTests */,
+				"WiFiMobileConfig.swift::WiFiMobileConfig.swiftTests" /* WiFiMobileConfig.swiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_67 /* MobileConfig.Installer.swift in Sources */,
+				OBJ_68 /* MIMEType.swift in Sources */,
+				OBJ_69 /* MobileConfig.swift in Sources */,
+				OBJ_70 /* Password+validate.swift in Sources */,
+				OBJ_71 /* Password.swift in Sources */,
+				OBJ_72 /* PlistDocument.swift in Sources */,
+				OBJ_73 /* PlistSerializable.swift in Sources */,
+				OBJ_74 /* SSID+validate.swift in Sources */,
+				OBJ_75 /* SSID.swift in Sources */,
+				OBJ_76 /* ValidationResult.swift in Sources */,
+				OBJ_77 /* WiFiMobileConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_84 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_95 /* ComparableDifferentiaUnits.swift in Sources */,
+				OBJ_96 /* Diffable+CustomStringConvertible.swift in Sources */,
+				OBJ_97 /* Diffable+Equatable.swift in Sources */,
+				OBJ_98 /* Diffable+Hashable.swift in Sources */,
+				OBJ_99 /* Diffable+PrettyPrintable.swift in Sources */,
+				OBJ_100 /* Diffable+RoughEquatable.swift in Sources */,
+				OBJ_101 /* Diffable.EnumEntry+CustomStringConvertible.swift in Sources */,
+				OBJ_102 /* Diffable.EnumEntry+Equatable.swift in Sources */,
+				OBJ_103 /* Diffable.EnumEntry+PrettyPrintable.swift in Sources */,
+				F1993E7822837A7800FDF95B /* PlistSerializable.swift in Sources */,
+				OBJ_104 /* Diffable.diff.swift in Sources */,
+				F1993E7B22837A7800FDF95B /* ValidationResult.swift in Sources */,
+				OBJ_105 /* Diffable.from.swift in Sources */,
+				OBJ_106 /* Diffable.swift in Sources */,
+				OBJ_107 /* DiffableConvertible.swift in Sources */,
+				OBJ_108 /* DiffableDictionary.swift in Sources */,
+				OBJ_109 /* DiffableSequence.swift in Sources */,
+				F1993E7222837A4E00FDF95B /* WiFiMobileConfig.swift in Sources */,
+				OBJ_110 /* DiffableSet.swift in Sources */,
+				OBJ_111 /* DifferentiaUnit+PrettyPrintable.swift in Sources */,
+				OBJ_112 /* DifferentiaUnit.DictionaryType.swift in Sources */,
+				F1993E7622837A7800FDF95B /* Password.swift in Sources */,
+				OBJ_113 /* DifferentiaUnit.SequenceType.swift in Sources */,
+				F1993E7922837A7800FDF95B /* SSID+validate.swift in Sources */,
+				F1993E7722837A7800FDF95B /* PlistDocument.swift in Sources */,
+				OBJ_114 /* DifferentiaUnit.swift in Sources */,
+				OBJ_115 /* Dwifft.swift in Sources */,
+				F1993E7522837A7800FDF95B /* Password+validate.swift in Sources */,
+				F1993E7A22837A7800FDF95B /* SSID.swift in Sources */,
+				OBJ_116 /* EnumCaseName.swift in Sources */,
+				F1993E7422837A7800FDF95B /* MobileConfig.swift in Sources */,
+				F1993E7322837A7800FDF95B /* MIMEType.swift in Sources */,
+				OBJ_117 /* MirrorDiffKit.swift in Sources */,
+				OBJ_118 /* PrettyLine.swift in Sources */,
+				OBJ_119 /* PrettyPrintable.swift in Sources */,
+				OBJ_120 /* PrettyPrinter.swift in Sources */,
+				OBJ_121 /* RoughEquatable.swift in Sources */,
+				OBJ_122 /* Transformer.swift in Sources */,
+				OBJ_123 /* TupleRepresentationDetector.swift in Sources */,
+				OBJ_124 /* Util.swift in Sources */,
+				OBJ_125 /* MobileConfigTests.swift in Sources */,
+				OBJ_126 /* PlistDocumentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "WiFiMobileConfig.swift::WiFiMobileConfig.swift" /* WiFiMobileConfig.swift */;
+			targetProxy = F1993E70228377AD00FDF95B /* PBXContainerItemProxy */;
+		};
+		OBJ_89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "WiFiMobileConfig.swift::WiFiMobileConfig.swiftTests" /* WiFiMobileConfig.swiftTests */;
+			targetProxy = F1993E71228377AE00FDF95B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = WiFiMobileConfig.swift.xcodeproj/WiFiMobileConfig_swift_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "WiFiMobileConfig-swift";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = WiFiMobileConfig.swift;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = WiFiMobileConfig.swift.xcodeproj/WiFiMobileConfig_swift_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "WiFiMobileConfig-swift";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = WiFiMobileConfig.swift;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = WiFiMobileConfig.swift.xcodeproj/WiFiMobileConfig_swiftTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = WiFiMobileConfig.swiftTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = WiFiMobileConfig.swift.xcodeproj/WiFiMobileConfig_swiftTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = WiFiMobileConfig.swiftTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "WiFiMobileConfig.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_63 /* Build configuration list for PBXNativeTarget "WiFiMobileConfig.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_64 /* Debug */,
+				OBJ_65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_80 /* Build configuration list for PBXNativeTarget "WiFiMobileConfig.swiftPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_81 /* Debug */,
+				OBJ_82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_86 /* Build configuration list for PBXAggregateTarget "WiFiMobileConfig.swiftPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_87 /* Debug */,
+				OBJ_88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_91 /* Build configuration list for PBXNativeTarget "WiFiMobileConfig.swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_92 /* Debug */,
+				OBJ_93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

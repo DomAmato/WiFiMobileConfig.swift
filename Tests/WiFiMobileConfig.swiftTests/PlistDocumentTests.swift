@@ -1,8 +1,5 @@
 import Foundation
 import XCTest
-import WiFiQRCodeKit
-
-
 
 class PlistDocumentTests: XCTestCase {
     func testSerializeAsPlistXML() {

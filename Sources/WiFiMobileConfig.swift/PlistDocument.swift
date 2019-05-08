@@ -1,7 +1,5 @@
 import Foundation
 
-
-
 public struct PlistDocument: Equatable {
     public let root: [String: PlistSerializable]
 

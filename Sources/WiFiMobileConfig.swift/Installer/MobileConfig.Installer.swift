@@ -1,25 +1,20 @@
-import UIKit
-
-
+import Foundation
 
 public extension MobileConfig {
-    public typealias DistributionServer = MobileConfigDistributionServer
-    public typealias DistributionServerState = MobileConfigDistributionServerState
+    typealias DistributionServer = MobileConfigDistributionServer
+    typealias DistributionServerState = MobileConfigDistributionServerState
 
 
-    public class Installer {
+    class Installer {
         fileprivate let distributionServer: DistributionServer
-        fileprivate let urlOpener: URLOpener
         fileprivate let distributionServerStatus: DistributionServerState
 
 
         public init(
-            distributingBy distributionServer: DistributionServer,
-            openingURLBy urlOpener: URLOpener = ApplicationURLOpener(on: UIApplication.shared)
+            distributingBy distributionServer: DistributionServer
         ) {
             self.distributionServer = distributionServer
             self.distributionServerStatus = distributionServer.start()
-            self.urlOpener = urlOpener
         }
 
 
@@ -35,7 +30,6 @@ public extension MobileConfig {
                         mobileConfigData: data,
                         mimeType: MIMEType.mobileConfig.text
                     )
-                    self.urlOpener.open(url: self.distributionServer.distributionURL)
                     return .confirming
 
                 case .failed(because: let reason):
@@ -45,16 +39,16 @@ public extension MobileConfig {
         }
 
 
-        public func keepDistributionServerForBackground(for application: UIApplication) {
-            var taskIdentifier: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
-
-            taskIdentifier = application.beginBackgroundTask(withName: "Awaiting install a provisioning profile") {
-                DispatchQueue.main.async {
-                    application.endBackgroundTask(taskIdentifier)
-                    taskIdentifier = UIBackgroundTaskInvalid
-                }
-            }
-        }
+//        public func keepDistributionServerForBackground(for application: UIApplication) {
+//            var taskIdentifier: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
+//
+//            taskIdentifier = application.beginBackgroundTask(withName: "Awaiting install a provisioning profile") {
+//                DispatchQueue.main.async {
+//                    application.endBackgroundTask(taskIdentifier)
+//                    taskIdentifier = UIBackgroundTaskInvalid
+//                }
+//            }
+//        }
 
 
         public enum InstallationResult: Equatable {
