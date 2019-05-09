@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "WiFiMobileConfig.swift::WiFiMobileConfig.swift"
-               BuildableName = "WiFiMobileConfig_swift.framework"
-               BlueprintName = "WiFiMobileConfig.swift"
-               ReferencedContainer = "container:WiFiMobileConfig.swift.xcodeproj">
+               BlueprintIdentifier = "WiFiMobileConfig::WiFiMobileConfig"
+               BuildableName = "WiFiMobileConfig.framework"
+               BlueprintName = "WiFiMobileConfig"
+               ReferencedContainer = "container:WiFiMobileConfig.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "WiFiMobileConfig.swift::WiFiMobileConfig.swiftTests"
-               BuildableName = "WiFiMobileConfig.swiftTests.xctest"
-               BlueprintName = "WiFiMobileConfig.swiftTests"
-               ReferencedContainer = "container:WiFiMobileConfig.swift.xcodeproj">
+               BlueprintIdentifier = "WiFiMobileConfig::WiFiMobileConfigTests"
+               BuildableName = "WiFiMobileConfigTests.xctest"
+               BlueprintName = "WiFiMobileConfigTests"
+               ReferencedContainer = "container:WiFiMobileConfig.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,10 +55,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "WiFiMobileConfig.swift::WiFiMobileConfig.swift"
-            BuildableName = "WiFiMobileConfig_swift.framework"
-            BlueprintName = "WiFiMobileConfig.swift"
-            ReferencedContainer = "container:WiFiMobileConfig.swift.xcodeproj">
+            BlueprintIdentifier = "WiFiMobileConfig::WiFiMobileConfig"
+            BuildableName = "WiFiMobileConfig.framework"
+            BlueprintName = "WiFiMobileConfig"
+            ReferencedContainer = "container:WiFiMobileConfig.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
