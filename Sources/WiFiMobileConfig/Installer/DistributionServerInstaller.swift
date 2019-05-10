@@ -1,0 +1,76 @@
+//
+//  DistributionServerInstaller.swift
+//  WiFiMobileConfig
+//
+//  Created by Magic.io on 5/10/19.
+//
+
+import Swifter
+import Foundation
+
+class DistributionServerInstaller: Installer {
+    typealias DistributionServer = MobileConfigDistributionServer
+    typealias DistributionServerState = MobileConfigDistributionServerState
+    
+    fileprivate let distributionServer: DistributionServer
+    fileprivate let distributionServerStatus: DistributionServerState
+    
+    public init(
+        distributingBy distributionServer: DistributionServer
+        ) {
+        self.distributionServer = distributionServer
+        self.distributionServerStatus = distributionServer.start()
+    }
+    
+    
+    public func install(mobileConfig: MobileConfig) -> InstallationResult {
+        switch self.distributionServerStatus {
+        case .failed(because: let reason):
+            return .failed(because: .distributionServerProblem(reason))
+            
+        case .successfullyStarted:
+            switch mobileConfig.generatePlist().serializeAsPlistXML() {
+            case .success(let data):
+                self.distributionServer.update(
+                    mobileConfigData: data,
+                    mimeType: MIMEType.mobileConfig.text
+                )
+                return .confirming
+                
+            case .failed(because: let reason):
+                return .failed(because: .serializationProblem(reason))
+            }
+        }
+    }
+    
+    public func installed(mobileConfig: MobileConfig) -> Bool {
+        return false
+    }
+    
+    
+    //        public func keepDistributionServerForBackground(for application: UIApplication) {
+    //            var taskIdentifier: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
+    //
+    //            taskIdentifier = application.beginBackgroundTask(withName: "Awaiting install a provisioning profile") {
+    //                DispatchQueue.main.async {
+    //                    application.endBackgroundTask(taskIdentifier)
+    //                    taskIdentifier = UIBackgroundTaskInvalid
+    //                }
+    //            }
+    //        }
+}
+
+public protocol MobileConfigDistributionServer {
+    var distributionURL: URL { get }
+    func start() -> MobileConfigDistributionServerState
+    func update(mobileConfigData: Data, mimeType: String)
+}
+
+
+
+public enum MobileConfigDistributionServerState: Equatable {
+    case successfullyStarted
+    case failed(because: FailureReason)
+    
+    public typealias FailureReason = String
+}
