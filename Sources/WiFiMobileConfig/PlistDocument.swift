@@ -78,6 +78,8 @@ internal func createPlistSerializable(from raw: PlistSerializable) -> Any {
         return float
     case .date(let date):
         return date
+    case .data(let data):
+        return data
     case .array(let array):
         return createPlistSerializable(from: array)
     case .dictionary(let dictionary):

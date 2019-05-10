@@ -21,16 +21,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		F1D9225C228480F100AF997F /* MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MIMEType.swift */; };
-		F1D9225D228480F100AF997F /* MobileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MobileConfig.swift */; };
-		F1D9225E228480F100AF997F /* Password+validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Password+validate.swift */; };
-		F1D9225F228480F100AF997F /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Password.swift */; };
-		F1D92260228480F100AF997F /* PlistDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* PlistDocument.swift */; };
-		F1D92261228480F100AF997F /* PlistSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* PlistSerializable.swift */; };
-		F1D92262228480F100AF997F /* SSID+validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SSID+validate.swift */; };
-		F1D92263228480F100AF997F /* SSID.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* SSID.swift */; };
-		F1D92264228480F100AF997F /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* ValidationResult.swift */; };
-		F1D92265228480F100AF997F /* WiFiMobileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* WiFiMobileConfig.swift */; };
+		F154A2422284B0EB00BA6E17 /* Certificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F154A2412284B0EB00BA6E17 /* Certificate.swift */; };
+		F1753EC32285D62700F06168 /* wpaconfig.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = F1753EC02285CAB300F06168 /* wpaconfig.plist */; };
+		F1753EC42285D62700F06168 /* wpaeapconfig.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = F1753EC12285CAB800F06168 /* wpaeapconfig.plist */; };
+		F1D9227A22848C4700AF997F /* EAPClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D9227922848C4700AF997F /* EAPClientConfig.swift */; };
+		F1D9227F2284958400AF997F /* Username+validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D9227D2284958400AF997F /* Username+validate.swift */; };
+		F1D922802284958400AF997F /* Username.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D9227E2284958400AF997F /* Username.swift */; };
 		OBJ_35 /* MobileConfig.Installer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* MobileConfig.Installer.swift */; };
 		OBJ_36 /* MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MIMEType.swift */; };
 		OBJ_37 /* MobileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MobileConfig.swift */; };
@@ -41,7 +37,7 @@
 		OBJ_42 /* SSID+validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SSID+validate.swift */; };
 		OBJ_43 /* SSID.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* SSID.swift */; };
 		OBJ_44 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* ValidationResult.swift */; };
-		OBJ_45 /* WiFiMobileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* WiFiMobileConfig.swift */; };
+		OBJ_45 /* WiFiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* WiFiConfig.swift */; };
 		OBJ_52 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_63 /* MobileConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* MobileConfigTests.swift */; };
 		OBJ_64 /* PlistDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* PlistDocumentTests.swift */; };
@@ -65,7 +61,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F1753EC22285D61D00F06168 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				F1753EC32285D62700F06168 /* wpaconfig.plist in CopyFiles */,
+				F1753EC42285D62700F06168 /* wpaeapconfig.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F154A2412284B0EB00BA6E17 /* Certificate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Certificate.swift; sourceTree = "<group>"; };
+		F1753EC02285CAB300F06168 /* wpaconfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = wpaconfig.plist; sourceTree = "<group>"; };
+		F1753EC12285CAB800F06168 /* wpaeapconfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = wpaeapconfig.plist; sourceTree = "<group>"; };
+		F1D9227922848C4700AF997F /* EAPClientConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAPClientConfig.swift; sourceTree = "<group>"; };
+		F1D9227D2284958400AF997F /* Username+validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Username+validate.swift"; sourceTree = "<group>"; };
+		F1D9227E2284958400AF997F /* Username.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Username.swift; sourceTree = "<group>"; };
 		OBJ_11 /* MobileConfig.Installer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileConfig.Installer.swift; sourceTree = "<group>"; };
 		OBJ_12 /* MIMEType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIMEType.swift; sourceTree = "<group>"; };
 		OBJ_13 /* MobileConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileConfig.swift; sourceTree = "<group>"; };
@@ -76,7 +92,7 @@
 		OBJ_18 /* SSID+validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SSID+validate.swift"; sourceTree = "<group>"; };
 		OBJ_19 /* SSID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSID.swift; sourceTree = "<group>"; };
 		OBJ_20 /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
-		OBJ_21 /* WiFiMobileConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiMobileConfig.swift; sourceTree = "<group>"; };
+		OBJ_21 /* WiFiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiConfig.swift; sourceTree = "<group>"; };
 		OBJ_24 /* MobileConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileConfigTests.swift; sourceTree = "<group>"; };
 		OBJ_25 /* PlistDocumentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistDocumentTests.swift; sourceTree = "<group>"; };
 		OBJ_29 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -124,6 +140,8 @@
 		OBJ_23 /* WiFiMobileConfigTests */ = {
 			isa = PBXGroup;
 			children = (
+				F1753EC02285CAB300F06168 /* wpaconfig.plist */,
+				F1753EC12285CAB800F06168 /* wpaeapconfig.plist */,
 				OBJ_24 /* MobileConfigTests.swift */,
 				OBJ_25 /* PlistDocumentTests.swift */,
 			);
@@ -140,7 +158,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -149,7 +167,6 @@
 				OBJ_26 /* Products */,
 				OBJ_29 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -169,12 +186,16 @@
 				OBJ_13 /* MobileConfig.swift */,
 				OBJ_14 /* Password+validate.swift */,
 				OBJ_15 /* Password.swift */,
+				F1D9227D2284958400AF997F /* Username+validate.swift */,
+				F1D9227E2284958400AF997F /* Username.swift */,
 				OBJ_16 /* PlistDocument.swift */,
 				OBJ_17 /* PlistSerializable.swift */,
 				OBJ_18 /* SSID+validate.swift */,
 				OBJ_19 /* SSID.swift */,
 				OBJ_20 /* ValidationResult.swift */,
-				OBJ_21 /* WiFiMobileConfig.swift */,
+				F1D9227922848C4700AF997F /* EAPClientConfig.swift */,
+				F154A2412284B0EB00BA6E17 /* Certificate.swift */,
+				OBJ_21 /* WiFiConfig.swift */,
 			);
 			name = WiFiMobileConfig;
 			path = Sources/WiFiMobileConfig;
@@ -219,6 +240,7 @@
 			buildPhases = (
 				OBJ_62 /* Sources */,
 				OBJ_65 /* Frameworks */,
+				F1753EC22285D61D00F06168 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -247,7 +269,7 @@
 				English,
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -265,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				F1D922802284958400AF997F /* Username.swift in Sources */,
+				F154A2422284B0EB00BA6E17 /* Certificate.swift in Sources */,
 				OBJ_35 /* MobileConfig.Installer.swift in Sources */,
 				OBJ_36 /* MIMEType.swift in Sources */,
+				F1D9227A22848C4700AF997F /* EAPClientConfig.swift in Sources */,
 				OBJ_37 /* MobileConfig.swift in Sources */,
 				OBJ_38 /* Password+validate.swift in Sources */,
 				OBJ_39 /* Password.swift in Sources */,
@@ -275,7 +300,8 @@
 				OBJ_42 /* SSID+validate.swift in Sources */,
 				OBJ_43 /* SSID.swift in Sources */,
 				OBJ_44 /* ValidationResult.swift in Sources */,
-				OBJ_45 /* WiFiMobileConfig.swift in Sources */,
+				OBJ_45 /* WiFiConfig.swift in Sources */,
+				F1D9227F2284958400AF997F /* Username+validate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,18 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				F1D92264228480F100AF997F /* ValidationResult.swift in Sources */,
-				F1D9225F228480F100AF997F /* Password.swift in Sources */,
 				OBJ_63 /* MobileConfigTests.swift in Sources */,
-				F1D92262228480F100AF997F /* SSID+validate.swift in Sources */,
-				F1D9225C228480F100AF997F /* MIMEType.swift in Sources */,
-				F1D92263228480F100AF997F /* SSID.swift in Sources */,
-				F1D92265228480F100AF997F /* WiFiMobileConfig.swift in Sources */,
-				F1D92260228480F100AF997F /* PlistDocument.swift in Sources */,
-				F1D9225E228480F100AF997F /* Password+validate.swift in Sources */,
-				F1D92261228480F100AF997F /* PlistSerializable.swift in Sources */,
 				OBJ_64 /* PlistDocumentTests.swift in Sources */,
-				F1D9225D228480F100AF997F /* MobileConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

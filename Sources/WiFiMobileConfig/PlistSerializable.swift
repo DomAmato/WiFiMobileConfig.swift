@@ -8,6 +8,7 @@ public indirect enum PlistSerializable: Equatable {
     case int(Int)
     case float(Float)
     case date(Date)
+    case data(Data)
     case array([PlistSerializable])
     case dictionary([String: PlistSerializable])
 
@@ -31,6 +32,10 @@ public indirect enum PlistSerializable: Equatable {
 
         if let date = any as? Date {
             return .success(.from(date))
+        }
+        
+        if let data = any as? Data {
+            return .success(.from(data))
         }
 
         if let array = any as? [Any] {
@@ -69,6 +74,9 @@ public indirect enum PlistSerializable: Equatable {
         return .date(date)
     }
 
+    public static func from(_ data: Data) -> PlistSerializable {
+        return .data(data)
+    }
 
     public static func from(_ array: [PlistSerializable]) -> PlistSerializable {
         return .array(array)

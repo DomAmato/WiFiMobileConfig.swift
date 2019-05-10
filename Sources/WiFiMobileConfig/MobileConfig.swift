@@ -4,11 +4,14 @@ import Foundation
 
 public struct MobileConfig: Equatable {
     // XXX: For compatible.
-    typealias WiFi = WiFiMobileConfig
+    typealias WiFi = WiFiConfig
 
     // Optional. Array of payload dictionaries. Not present if IsEncrypted is true.
     public let contents: [PayloadContent]?
 
+    // Optional. Array of certificates
+    public let certificates: [Certificate]?
+    
     // Optional. A description of the profile, shown on the Detail screen for the profile.
     // This should be descriptive enough to help the user decide whether to install the profile.
     public let description: String?
@@ -82,6 +85,7 @@ public struct MobileConfig: Equatable {
 
     public init(
         contents: [PayloadContent]?,
+        certificates: [Certificate]?,
         description: String?,
         displayName: DisplayName?,
         expired: Date?,
@@ -94,6 +98,7 @@ public struct MobileConfig: Equatable {
         consentText: ConsentText?
     ) {
         self.contents = contents
+        self.certificates = certificates
         self.description = description
         self.displayName = displayName
         self.expired = expired
@@ -117,9 +122,10 @@ public struct MobileConfig: Equatable {
 
         if let contents = self.contents {
             // NOTE: Make stable
-            result[TopLevelKey.content] = .from(contents
-                .sorted { (a, b) in a.type > b.type }
-                .map { $0.serializableRepresentation })
+            let certificates = self.certificates ?? []
+            let totalContents = [contents.sorted { (a, b) in a.type > b.type }
+                .map { $0.serializableRepresentation }, certificates.map { $0.serializableRepresentation }] as [[PlistSerializable]]
+            result[TopLevelKey.content] = .from(totalContents.flatMap { $0 })
         }
 
         if let description = self.description {
@@ -200,13 +206,15 @@ public struct MobileConfig: Equatable {
 
 
     public enum PayloadContent: Equatable {
-        case wiFi(WiFiMobileConfig)
-
+        case wiFi(WiFiConfig)
+        case cert(Certificate)
 
         public var type: PayloadType {
             switch self {
             case .wiFi(let wiFi):
                 return wiFi.type
+            case .cert(let cert):
+                return cert.type
             }
         }
 
@@ -215,7 +223,10 @@ public struct MobileConfig: Equatable {
             switch self {
             case .wiFi(let wiFi):
                 return wiFi.serializableRepresentation
+            case .cert(let cert):
+                return cert.serializableRepresentation
             }
+            
         }
     }
 
@@ -275,6 +286,7 @@ public struct MobileConfig: Equatable {
 
         public static let mobileConfig = PayloadType(type: "Configuration")
         public static let wiFi = PayloadType(type: "com.apple.wifi.managed")
+        public static let cert = PayloadType(type: "com.apple.security.pkcs1")
     }
 
 

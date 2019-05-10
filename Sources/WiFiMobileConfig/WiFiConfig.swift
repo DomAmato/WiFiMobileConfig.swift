@@ -2,7 +2,7 @@ import Foundation
 
 
 
-public struct WiFiMobileConfig: Equatable {
+public struct WiFiConfig: Equatable {
     // The payload type. The payload types are described in Payload-Specific Property Keys.
     public var type: MobileConfig.PayloadType {
         return .wiFi
@@ -80,10 +80,6 @@ public struct WiFiMobileConfig: Equatable {
     //
     // Availability: Available in iOS 10.0 and later and in macOS 10.13 and later.
     public let qosMarkingPolicy: QoSMarkingPolicy?
-
-
-    // TODO: EncryptionType for Enterprise is not supported. If you want to use it, you can send PR for it.
-
 
     public init(
         version: MobileConfig.PayloadVersion,
@@ -302,7 +298,8 @@ public struct WiFiMobileConfig: Equatable {
         case none
         case wep(Password)
         case wpa(Password)
-        case wpa2(Password /* NOT IMPLEMENTED: , EAPClientConfiguration? */)
+        case wpa2(Password)
+        case wpa2eap(EAPClientConfig)
         case any(Password?)
 
 
@@ -324,6 +321,11 @@ public struct WiFiMobileConfig: Equatable {
                 return [
                     WiFiSpecificKey.encryptionType: .from("WPA2"),
                     WiFiSpecificKey.password: .from(password.text)
+                ]
+            case .wpa2eap(let eapConfiguration):
+                return [
+                    WiFiSpecificKey.encryptionType: .from("WPA2"),
+                    WiFiSpecificKey.eapConfiguration: eapConfiguration.serializableRepresentation
                 ]
             case .any(.none):
                 return [WiFiSpecificKey.encryptionType: .from("Any")]
@@ -444,14 +446,15 @@ public struct WiFiMobileConfig: Equatable {
         public static let proxyType = "ProxyType"
         public static let captiveBypass = "CaptiveBypass"
         public static let qosMarkingPolicy = "QoSMarkingPolicy"
+        public static let eapConfiguration = "EAPClientConfiguration"
     }
 }
 
 
-extension WiFiMobileConfig.BundleIdentifier: Comparable {
+extension WiFiConfig.BundleIdentifier: Comparable {
     public static func <(
-        lhs: WiFiMobileConfig.BundleIdentifier,
-        rhs: WiFiMobileConfig.BundleIdentifier
+        lhs: WiFiConfig.BundleIdentifier,
+        rhs: WiFiConfig.BundleIdentifier
     ) -> Bool {
         return lhs.text < rhs.text
     }
