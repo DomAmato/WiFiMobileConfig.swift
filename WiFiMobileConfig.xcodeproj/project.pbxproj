@@ -24,6 +24,8 @@
 		F1753EE42285F2DF00F06168 /* SimpleDistributionServerInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1753EE12285F0C300F06168 /* SimpleDistributionServerInstaller.swift */; };
 		F1753EE62285F68A00F06168 /* CommandLineInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1753EE52285F68A00F06168 /* CommandLineInstaller.swift */; };
 		F1753EE82285F9BA00F06168 /* DistributionServerInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1753EE72285F9BA00F06168 /* DistributionServerInstaller.swift */; };
+		F1753EEA2286093A00F06168 /* wpaeapconfig.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* wpaeapconfig.plist */; };
+		F1753EEB2286093A00F06168 /* wpaconfig.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* wpaconfig.plist */; };
 		OBJ_100 /* Certificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Certificate.swift */; };
 		OBJ_101 /* EAPClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* EAPClientConfig.swift */; };
 		OBJ_102 /* Installer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Installer.swift */; };
@@ -98,6 +100,20 @@
 			remoteInfo = WiFiMobileConfigTests;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1753EE92286093300F06168 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				F1753EEA2286093A00F06168 /* wpaeapconfig.plist in CopyFiles */,
+				F1753EEB2286093A00F06168 /* wpaconfig.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F1753EE12285F0C300F06168 /* SimpleDistributionServerInstaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDistributionServerInstaller.swift; sourceTree = "<group>"; };
@@ -391,6 +407,7 @@
 			buildPhases = (
 				OBJ_133 /* Sources */,
 				OBJ_136 /* Frameworks */,
+				F1753EE92286093300F06168 /* CopyFiles */,
 			);
 			buildRules = (
 			);
