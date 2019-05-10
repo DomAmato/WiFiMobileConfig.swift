@@ -7,9 +7,9 @@
 
 import Foundation
 
-class CommandLineInstaller: Installer {
+public class CommandLineInstaller: Installer {
 
-    public func install(mobileConfig: MobileConfig) -> InstallationResult {
+    public static func install(mobileConfig: MobileConfig) -> InstallationResult {
         
         do {
             // get the documents folder url
@@ -41,7 +41,7 @@ class CommandLineInstaller: Installer {
         }
     }
     
-    public func installed(mobileConfig: MobileConfig) -> Bool {
+    public static func installed(mobileConfig: MobileConfig) -> Bool {
         let task = Process()
         //  % \
 

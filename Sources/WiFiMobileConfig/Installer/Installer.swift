@@ -8,8 +8,8 @@
 import Foundation
 
 protocol Installer {
-    func install(mobileConfig: MobileConfig) -> InstallationResult
-    func installed(mobileConfig: MobileConfig) -> Bool
+    static func install(mobileConfig: MobileConfig) -> InstallationResult
+    static func installed(mobileConfig: MobileConfig) -> Bool
 }
 
 public enum InstallationResult: Equatable {

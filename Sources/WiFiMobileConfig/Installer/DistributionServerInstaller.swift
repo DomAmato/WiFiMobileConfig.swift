@@ -8,20 +8,20 @@
 import Swifter
 import Foundation
 
-class DistributionServerInstaller: Installer {
-    typealias DistributionServer = MobileConfigDistributionServer
-    typealias DistributionServerState = MobileConfigDistributionServerState
-    
-    fileprivate let distributionServer: DistributionServer
-    fileprivate let distributionServerStatus: DistributionServerState
+public class DistributionServerInstaller: Installer {
+    fileprivate let distributionServer: MobileConfigDistributionServer
+    fileprivate let distributionServerStatus: MobileConfigDistributionServerState
     
     public init(
-        distributingBy distributionServer: DistributionServer
+        distributingBy distributionServer: MobileConfigDistributionServer
         ) {
         self.distributionServer = distributionServer
         self.distributionServerStatus = distributionServer.start()
     }
     
+    public static func install(mobileConfig: MobileConfig) -> InstallationResult {
+        return .failed(because: .distributionServerProblem("Must used instanced installer instead of static function"))
+    }
     
     public func install(mobileConfig: MobileConfig) -> InstallationResult {
         switch self.distributionServerStatus {
@@ -43,7 +43,7 @@ class DistributionServerInstaller: Installer {
         }
     }
     
-    public func installed(mobileConfig: MobileConfig) -> Bool {
+    public static func installed(mobileConfig: MobileConfig) -> Bool {
         return false
     }
     

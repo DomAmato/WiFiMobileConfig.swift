@@ -8,8 +8,8 @@
 import Swifter
 import Foundation
 
-class SimpleDistributionServerInstaller: MobileConfigDistributionServer {
-    let distributionURL: URL
+public class SimpleDistributionServerInstaller: MobileConfigDistributionServer {
+    public let distributionURL: URL
     private let server: Swifter.HttpServer
     private let port: UInt16
     private var mobileConfig: (data: Data, mimeType: String)?
@@ -43,7 +43,7 @@ class SimpleDistributionServerInstaller: MobileConfigDistributionServer {
     }
     
     
-    func start() -> MobileConfigDistributionServerState {
+    public func start() -> MobileConfigDistributionServerState {
         do {
             try self.server.start(self.port)
             return .successfullyStarted
@@ -54,7 +54,7 @@ class SimpleDistributionServerInstaller: MobileConfigDistributionServer {
     }
     
     
-    func update(mobileConfigData: Data, mimeType: String) {
+    public func update(mobileConfigData: Data, mimeType: String) {
         self.mobileConfig = (data: mobileConfigData, mimeType: mimeType)
     }
 }
