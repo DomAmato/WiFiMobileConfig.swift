@@ -267,6 +267,10 @@ public struct MobileConfig: Equatable {
         public var serializableRepresentation: PlistSerializable {
             return .from(self.text)
         }
+        
+        public func toString() -> String {
+            return self.text
+        }
     }
 
 

@@ -8,7 +8,7 @@
 import Swifter
 import Foundation
 
-public class DistributionServerInstaller: Installer {
+public class DistributionServerInstaller {
     fileprivate let distributionServer: MobileConfigDistributionServer
     fileprivate let distributionServerStatus: MobileConfigDistributionServerState
     
@@ -17,10 +17,6 @@ public class DistributionServerInstaller: Installer {
         ) {
         self.distributionServer = distributionServer
         self.distributionServerStatus = distributionServer.start()
-    }
-    
-    public static func install(mobileConfig: MobileConfig) -> InstallationResult {
-        return .failed(because: .distributionServerProblem("Must used instanced installer instead of static function"))
     }
     
     public func install(mobileConfig: MobileConfig) -> InstallationResult {
@@ -41,12 +37,7 @@ public class DistributionServerInstaller: Installer {
                 return .failed(because: .serializationProblem(reason))
             }
         }
-    }
-    
-    public static func installed(mobileConfig: MobileConfig) -> Bool {
-        return false
-    }
-    
+    }    
     
     //        public func keepDistributionServerForBackground(for application: UIApplication) {
     //            var taskIdentifier: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid

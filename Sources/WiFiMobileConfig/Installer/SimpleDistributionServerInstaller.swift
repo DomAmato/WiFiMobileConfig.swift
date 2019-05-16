@@ -8,6 +8,7 @@
 import Swifter
 import Foundation
 
+@available(iOS 12.0, *)
 public class SimpleDistributionServerInstaller: MobileConfigDistributionServer {
     public let distributionURL: URL
     private let server: Swifter.HttpServer

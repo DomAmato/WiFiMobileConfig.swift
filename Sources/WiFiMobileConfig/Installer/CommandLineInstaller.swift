@@ -5,24 +5,25 @@
 //  Created by Magic.io on 5/10/19.
 //
 
+import Cocoa
 import Foundation
 
-public class CommandLineInstaller: Installer {
+@available(OSX 10.0, *)
+public class CommandLineInstaller {
 
-    public static func install(mobileConfig: MobileConfig) -> InstallationResult {
+    public static func install(mobileConfig: MobileConfig, configName: String) -> InstallationResult {
         
         do {
             // get the documents folder url
             if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
                 // create the destination url for the text file to be saved
-                let fileURL = documentDirectory.appendingPathComponent("magic.mobileconfig")
+                let fileURL = documentDirectory.appendingPathComponent("\(configName).mobileconfig")
                 // writing to disk
                 try mobileConfig.generatePlist().serializeAsPlistXML().data!.write(to: fileURL, options: .atomicWrite)
                 
                 let task = Process()
-                task.launchPath = "/usr/bin"
-                task.arguments = ["profiles", "install", "-path=\(fileURL.absoluteString)", "-user=\(NSUserName())"
-                ]
+                task.launchPath = "/usr/bin/profiles"
+                task.arguments = ["install", "-path=\(fileURL.absoluteString)", "-user=\(NSUserName())"]
                 task.launch()
                 task.waitUntilExit()
                 let status = task.terminationStatus
@@ -41,17 +42,23 @@ public class CommandLineInstaller: Installer {
         }
     }
     
-    public static func installed(mobileConfig: MobileConfig) -> Bool {
+    public static func installed(config: MobileConfig) -> Bool {
+        let pipe = Pipe()
         let task = Process()
-        //  % \
-
-        task.launchPath = "/usr/bin"
-        task.arguments = ["profiles", "-Lv", "|", "grep", "name: \(mobileConfig.displayName!)",
-            "-4", "|", "awk", """
-            -F": "
-            """, """
-            "/attribute: profileIdentifier/{print $NF}"
-            """]
+        task.launchPath = "/usr/bin/profiles"
+        task.arguments = ["list"]
+        task.standardOutput = pipe
+        task.launch()
+        task.waitUntilExit()
+        let fh = pipe.fileHandleForReading
+        let output = String(data: fh.availableData, encoding: .ascii)!
+        return output.contains("profileIdentifier: \(config.identifier.toString())")
+    }
+    
+    public static func remove(config: MobileConfig) -> Bool {
+        let task = Process()
+        task.launchPath = "/usr/bin/profiles"
+        task.arguments = ["remove", "-identifier=\(config.identifier)"]
         task.launch()
         task.waitUntilExit()
         return task.terminationStatus.signum() == 0

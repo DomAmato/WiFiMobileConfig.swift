@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		F1614E2A22861E7F00D596F4 /* CLIInstallationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1614E2922861E7F00D596F4 /* CLIInstallationTests.swift */; };
+		F1614E2E2289E00300D596F4 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1614E2D2289E00200D596F4 /* SecurityFoundation.framework */; };
 		F1753EE42285F2DF00F06168 /* SimpleDistributionServerInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1753EE12285F0C300F06168 /* SimpleDistributionServerInstaller.swift */; };
 		F1753EE62285F68A00F06168 /* CommandLineInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1753EE52285F68A00F06168 /* CommandLineInstaller.swift */; };
 		F1753EE82285F9BA00F06168 /* DistributionServerInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1753EE72285F9BA00F06168 /* DistributionServerInstaller.swift */; };
@@ -116,6 +118,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F1614E2922861E7F00D596F4 /* CLIInstallationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLIInstallationTests.swift; sourceTree = "<group>"; };
+		F1614E2D2289E00200D596F4 /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = System/Library/Frameworks/SecurityFoundation.framework; sourceTree = SDKROOT; };
+		F1614E2F228A20D600D596F4 /* key.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = key.pem; sourceTree = "<group>"; };
+		F1614E30228A20D600D596F4 /* cert.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = cert.pem; sourceTree = "<group>"; };
 		F1753EE12285F0C300F06168 /* SimpleDistributionServerInstaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDistributionServerInstaller.swift; sourceTree = "<group>"; };
 		F1753EE52285F68A00F06168 /* CommandLineInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineInstaller.swift; sourceTree = "<group>"; };
 		F1753EE72285F9BA00F06168 /* DistributionServerInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionServerInstaller.swift; sourceTree = "<group>"; };
@@ -164,7 +170,7 @@
 		OBJ_62 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		"Swifter::Swifter::Product" /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"WiFiMobileConfig::WiFiMobileConfig::Product" /* WiFiMobileConfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WiFiMobileConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"WiFiMobileConfig::WiFiMobileConfig::Product" /* WiFiMobileConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WiFiMobileConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"WiFiMobileConfig::WiFiMobileConfigTests::Product" /* WiFiMobileConfigTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = WiFiMobileConfigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				F1614E2E2289E00300D596F4 /* SecurityFoundation.framework in Frameworks */,
 				OBJ_116 /* Swifter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,13 +203,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1614E2C2289E00200D596F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1614E2D2289E00200D596F4 /* SecurityFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_12 /* Installer */ = {
 			isa = PBXGroup;
 			children = (
-				F1753EE12285F0C300F06168 /* SimpleDistributionServerInstaller.swift */,
-				F1753EE72285F9BA00F06168 /* DistributionServerInstaller.swift */,
 				F1753EE52285F68A00F06168 /* CommandLineInstaller.swift */,
+				F1753EE72285F9BA00F06168 /* DistributionServerInstaller.swift */,
 				OBJ_13 /* Installer.swift */,
+				F1753EE12285F0C300F06168 /* SimpleDistributionServerInstaller.swift */,
 			);
 			path = Installer;
 			sourceTree = "<group>";
@@ -218,10 +233,13 @@
 		OBJ_27 /* WiFiMobileConfigTests */ = {
 			isa = PBXGroup;
 			children = (
+				F1614E30228A20D600D596F4 /* cert.pem */,
+				F1614E2F228A20D600D596F4 /* key.pem */,
 				OBJ_28 /* wpaeapconfig.plist */,
 				OBJ_29 /* wpaconfig.plist */,
 				OBJ_30 /* MobileConfigTests.swift */,
 				OBJ_31 /* PlistDocumentTests.swift */,
+				F1614E2922861E7F00D596F4 /* CLIInstallationTests.swift */,
 			);
 			name = WiFiMobileConfigTests;
 			path = Tests/WiFiMobileConfigTests;
@@ -281,7 +299,7 @@
 			path = .build/checkouts/swifter/Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -291,8 +309,8 @@
 				OBJ_57 /* Products */,
 				OBJ_61 /* LICENSE */,
 				OBJ_62 /* README.md */,
+				F1614E2C2289E00200D596F4 /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_57 /* Products */ = {
@@ -317,9 +335,9 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* Info.plist */,
+				OBJ_12 /* Installer */,
 				OBJ_10 /* Certificate.swift */,
 				OBJ_11 /* EAPClientConfig.swift */,
-				OBJ_12 /* Installer */,
 				OBJ_14 /* MIMEType.swift */,
 				OBJ_15 /* MobileConfig.swift */,
 				OBJ_16 /* Password+validate.swift */,
@@ -437,7 +455,7 @@
 				English,
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_57 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -467,6 +485,7 @@
 			files = (
 				OBJ_134 /* MobileConfigTests.swift in Sources */,
 				OBJ_135 /* PlistDocumentTests.swift in Sources */,
+				F1614E2A22861E7F00D596F4 /* CLIInstallationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,7 +793,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = WiFiMobileConfig;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -802,7 +821,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = WiFiMobileConfig;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;

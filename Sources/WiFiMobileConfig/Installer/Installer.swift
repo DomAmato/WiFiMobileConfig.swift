@@ -7,11 +7,6 @@
 
 import Foundation
 
-protocol Installer {
-    static func install(mobileConfig: MobileConfig) -> InstallationResult
-    static func installed(mobileConfig: MobileConfig) -> Bool
-}
-
 public enum InstallationResult: Equatable {
     case success
     case confirming
