@@ -12,7 +12,6 @@ import Foundation
 public class CommandLineInstaller {
 
     public static func install(mobileConfig: MobileConfig, configName: String) -> InstallationResult {
-        
         do {
             // get the documents folder url
             if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
@@ -22,8 +21,11 @@ public class CommandLineInstaller {
                 try mobileConfig.generatePlist().serializeAsPlistXML().data!.write(to: fileURL, options: .atomicWrite)
                 
                 let task = Process()
+                // Using sudo removes the prompt 
+//                task.launchPath = "/usr/bin/sudo"
+//                task.arguments = ["profiles", "install", "-path=\(fileURL.absoluteString)", "-user=\(NSUserName())"]
                 task.launchPath = "/usr/bin/profiles"
-                task.arguments = ["install", "-path=\(fileURL.absoluteString)", "-user=\(NSUserName())"]
+                task.arguments = ["install", "-path=\(fileURL.path)", "-user=\(NSUserName())"]
                 task.launch()
                 task.waitUntilExit()
                 let status = task.terminationStatus
@@ -58,7 +60,7 @@ public class CommandLineInstaller {
     public static func remove(config: MobileConfig) -> Bool {
         let task = Process()
         task.launchPath = "/usr/bin/profiles"
-        task.arguments = ["remove", "-identifier=\(config.identifier)"]
+        task.arguments = ["remove", "-identifier=\(config.identifier.toString())"]
         task.launch()
         task.waitUntilExit()
         return task.terminationStatus.signum() == 0

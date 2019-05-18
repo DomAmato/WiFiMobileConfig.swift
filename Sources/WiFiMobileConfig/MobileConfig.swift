@@ -287,7 +287,6 @@ public struct MobileConfig: Equatable {
             return .from(self.text)
         }
 
-
         public static let mobileConfig = PayloadType(type: "Configuration")
         public static let wiFi = PayloadType(type: "com.apple.wifi.managed")
         public static let cert = PayloadType(type: "com.apple.security.pkcs1")
