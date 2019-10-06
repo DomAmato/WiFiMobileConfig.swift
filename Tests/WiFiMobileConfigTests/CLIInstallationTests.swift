@@ -5,6 +5,7 @@
 //  Created by Dominic Amato on 5/10/19.
 //
 
+#if os(macOS)
 import WiFiMobileConfig
 import XCTest
 
@@ -238,3 +239,4 @@ class CLIInstallationTests: XCTestCase {
         XCTAssertTrue(CommandLineInstaller.remove(config: mobileConfig))
     }
 }
+#endif

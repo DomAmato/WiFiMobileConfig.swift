@@ -5,6 +5,7 @@
 //  Created by Magic.io on 5/10/19.
 //
 
+#if os(macOS)
 import Cocoa
 import Foundation
 
@@ -66,3 +67,4 @@ public class CommandLineInstaller {
         return task.terminationStatus.signum() == 0
     }
 }
+#endif
